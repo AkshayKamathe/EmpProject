@@ -28,7 +28,7 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeRepository employeeRepository;
 	
-	// get all employees
+	// get all employees New feature added in employee controller
 	@GetMapping("/employees")
 	public List<Employee> getAllEmployees(){
 		return employeeRepository.findAll();
