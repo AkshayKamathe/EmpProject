@@ -63,7 +63,7 @@ public class EmployeeController {
 		return ResponseEntity.ok(updatedEmployee);
 	}
 	
-	// delete employee rest api
+	// delete employee rest api whay this is so good in delete logic
 	@DeleteMapping("/employees/{id}")
 	public ResponseEntity<Map<String, Boolean>> deleteEmployee(@PathVariable Long id){
 		Employee employee = employeeRepository.findById(id)
